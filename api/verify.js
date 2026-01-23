@@ -10,7 +10,7 @@ export default function handler(req, res) {
   const code = String(req.body?.code || "").trim();
 
   // ✅ 你现在可用的授权码（之后可改）
-  const VALID_CODES = ["ABC123"];
+  const VALID_CODES = ["123123"];
 
   const ok = VALID_CODES.includes(code);
   return res.status(ok ? 200 : 401).json({ ok });
